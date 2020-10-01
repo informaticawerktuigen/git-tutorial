@@ -3,18 +3,22 @@ In deze tutorial leer je de basisprincipes van het versiecontrolesysteem git ken
 # Inhoudstabel
 
 - [Inhoudstabel](#inhoudstabel)
+- [Voorkennis](#voorkennis)
 - [Referentiemateriaal](#referentiemateriaal)
-- [Introductie](#introductie)
-- [Repository aanmaken](#repository-aanmaken)
-  - [GitHub](#github)
-- [Repository clonen](#repository-clonen)
-- [Bestand wijzigen](#bestand-wijzigen)
-- [Bestand toevoegen](#bestand-toevoegen)
-- [Wijzigingen van anderen ophalen](#wijzigingen-van-anderen-ophalen)
-- [Oude versie van bestand bekijken](#oude-versie-van-bestand-bekijken)
-- [Bestand herstellen](#bestand-herstellen)
-- [Git branch](#git-branch)
-- [Merge conflict](#merge-conflict)
+- [Tutorial](#tutorial)
+  - [Introductie](#introductie)
+  - [Repository aanmaken](#repository-aanmaken)
+    - [GitHub](#github)
+  - [Repository clonen](#repository-clonen)
+  - [Bestand wijzigen](#bestand-wijzigen)
+  - [Bestand toevoegen](#bestand-toevoegen)
+  - [Wijzigingen van anderen ophalen](#wijzigingen-van-anderen-ophalen)
+  - [Oude versie van bestand bekijken](#oude-versie-van-bestand-bekijken)
+  - [Bestand herstellen](#bestand-herstellen)
+  - [Git branch](#git-branch)
+  - [Merge conflict](#merge-conflict)
+
+# Voorkennis
 
 - [Basiskennis van Linux](https://github.com/informaticawerktuigen/oefenzitting-linux)
 - [Werkende Linux-omgeving](https://github.com/informaticawerktuigen/klaarzetten-werkomgeving)
@@ -23,7 +27,9 @@ In deze tutorial leer je de basisprincipes van het versiecontrolesysteem git ken
 
 Een uitgebreidere versie van deze tutorial kan je terugvinden in het [Git Book](https://git-scm.com/book/nl/v2).
 
-# Introductie
+# Tutorial
+
+## Introductie
 
 Git is een _Version Control System_. Een _Git-repository_ is een bestandensysteem waarin verschillende versies van éénzelfde bestand bewaard kan worden.
 
@@ -39,9 +45,9 @@ Bijna alle programmeerprojecten ter wereld maken gebruik van Git. Met Git kan je
 
 Git is een technologie die je best vroeg in je opleiding onder de knie krijgt. Het is dus een sterke aanrader deze tutorial te volgen.
 
-# Repository aanmaken
+## Repository aanmaken
 
-## GitHub
+### GitHub
 
 [GitHub](https://github.com/) is een website van Microsoft waar Git-repositories gratis gehost kunnen worden. Je kan een repository laten aanmaken op de server van GitHub en deze eenvoudig delen met anderen.
 
@@ -63,7 +69,7 @@ Onze repository heeft een URL waarmee we deze kunnen importeren op onze eigen ma
 - Druk op de groene knop met Code rechtsboven op de pagina van de repository
 - Selecteer _HTTPS_ en kopieer de link in het vakje. Deze heeft typisch het formaat `https://github.com/<gebruikersnaam>/<repository-naam>.git`.
 
-# Repository clonen
+## Repository clonen
 
 Met behulp van `git clone` kunnen we een lokale kopie maken van onze repository. Vervolgens kunnen we bestanden toevoegen, wijzigen of verwijderen.
 
@@ -84,7 +90,7 @@ Het uitvoeren van dit commando maakt een nieuwe folder aan met de naam van de re
 
 **Alle volgende stappen in de tutorial nemen aan dat de working directory van je terminal de folder van je repository is.** Dit kan je verifiëren met met het commando `pwd`
 
-# Bestand wijzigen
+## Bestand wijzigen
 
 - Open het bestand `README.md` in een editor naar keuze.
 
@@ -118,7 +124,7 @@ Op dit moment zijn de wijzigingen correct bewaard in je lokale repository. Wanne
 
 Ververs nu de webpagina van je repository op GitHub. De nieuwe inhoud van je README-bestand zou daar nu ook zichtbaar moeten zijn.
 
-# Bestand toevoegen
+## Bestand toevoegen
 
 Nieuwe bestanden toevoegen aan een repository gebeurt op dezelfde wijze als het bewerken van bestaande bestanden.
 
@@ -153,7 +159,7 @@ Nieuwe bestanden toevoegen aan een repository gebeurt op dezelfde wijze als het 
   git push origin master
   ```
 
-# Wijzigingen van anderen ophalen
+## Wijzigingen van anderen ophalen
 
 In een repository met meerdere gebruikers kan je de wijzigingen die anderen _gepushet_ hebben opvragen met behulp van het commando `git pull`.
 
@@ -163,7 +169,7 @@ In deze tutorial werk je alleen, dus zal het onderstaande commando geen effect h
 git pull origin master
 ```
 
-# Oude versie van bestand bekijken
+## Oude versie van bestand bekijken
 
 Elke commit in de repository bewaart wijzigingen in één of meerdere bestanden. Elke wijziging kan ook ongedaan gemaakt worden. Een commit wordt geïdentificeerd door een unieke code van 40 karakters.
 
@@ -186,7 +192,7 @@ Elke commit in de repository bewaart wijzigingen in één of meerdere bestanden.
   cat README.md
   ```
 
-# Bestand herstellen
+## Bestand herstellen
 
 - Gebruik `git log` en `git checkout` om de nieuwste versie van het bestand terug te herstellen. Gebruik hiervoor de hash van de nieuwste commit.
 
@@ -200,7 +206,7 @@ Elke commit in de repository bewaart wijzigingen in één of meerdere bestanden.
   cat README.md
   ```
 
-# Git branch
+## Git branch
 
 Een git-repository is intern gestructureerd door middel van branches. Elke repository heeft een _master_-branch die kan beschouwd worden als de stam van je repository. Hierop vind je vaak de meest recente werkende versies van software-projecten.
 
@@ -253,7 +259,7 @@ Typisch worden branches aangemaakt voor nieuwe functionaliteiten. Wanneer deze f
   cat README.md
   ```
 
-# Merge conflict
+## Merge conflict
 
 Soms gebeurt het dat meerdere ontwikkelaars op hetzelfde moment in een bestand aan het werken zijn. Neem het volgende scenario
 
