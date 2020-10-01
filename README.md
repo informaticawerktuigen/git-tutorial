@@ -1,5 +1,8 @@
 In deze tutorial leer je de basisprincipes van het versiecontrolesysteem git kennen.
 
+# Inhoudstabel
+
+- [Inhoudstabel](#inhoudstabel)
 - [Referentiemateriaal](#referentiemateriaal)
 - [Introductie](#introductie)
 - [Repository aanmaken](#repository-aanmaken)
