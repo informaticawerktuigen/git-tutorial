@@ -5,6 +5,7 @@ In deze tutorial leer je de basisprincipes van het versiecontrolesysteem git ken
 - [Inhoudstabel](#inhoudstabel)
 - [Voorkennis](#voorkennis)
 - [Referentiemateriaal](#referentiemateriaal)
+- [Video](#video)
 - [Tutorial](#tutorial)
   - [Introductie](#introductie)
   - [Repository aanmaken](#repository-aanmaken)
@@ -27,6 +28,12 @@ In deze tutorial leer je de basisprincipes van het versiecontrolesysteem git ken
 # Referentiemateriaal
 
 Een uitgebreidere versie van deze tutorial kan je terugvinden in het [Git Book](https://git-scm.com/book/nl/v2).
+
+# Video
+
+Een videoversie van deze tutorial is beschikbaar:
+
+[![Bekijk de video](https://img.youtube.com/vi/0cH4k6vUUbk/hqdefault.jpg)](https://youtu.be/0cH4k6vUUbk)
 
 # Tutorial
 
