@@ -1,6 +1,17 @@
 In deze tutorial leer je de basisprincipes van het versiecontrolesysteem git kennen.
 
-# Vereisten
+- [Referentiemateriaal](#referentiemateriaal)
+- [Introductie](#introductie)
+- [Repository aanmaken](#repository-aanmaken)
+  - [GitHub](#github)
+- [Repository clonen](#repository-clonen)
+- [Bestand wijzigen](#bestand-wijzigen)
+- [Bestand toevoegen](#bestand-toevoegen)
+- [Wijzigingen van anderen ophalen](#wijzigingen-van-anderen-ophalen)
+- [Oude versie van bestand bekijken](#oude-versie-van-bestand-bekijken)
+- [Bestand herstellen](#bestand-herstellen)
+- [Git branch](#git-branch)
+- [Merge conflict](#merge-conflict)
 
 - [Basiskennis van Linux](https://github.com/informaticawerktuigen/oefenzitting-linux)
 - [Werkende Linux-omgeving](https://github.com/informaticawerktuigen/klaarzetten-werkomgeving)
