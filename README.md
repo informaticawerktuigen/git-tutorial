@@ -234,7 +234,7 @@ Typisch worden branches aangemaakt voor nieuwe functionaliteiten. Wanneer deze f
 - Maak een branch genaamd `readme-wijzigen` aan met behulp van het `git branch` commando
 
   ```shell
-  git branch -b readme-wijzigen
+  git branch readme-wijzigen
   ```
 
 - Wijzig het bestand `README.md` naar keuze
