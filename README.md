@@ -9,6 +9,7 @@ In deze tutorial leer je de basisprincipes van het versiecontrolesysteem git ken
   - [Introductie](#introductie)
   - [Repository aanmaken](#repository-aanmaken)
     - [GitHub](#github)
+  - [Git configureren](#git-configureren)
   - [Repository clonen](#repository-clonen)
   - [Bestand wijzigen](#bestand-wijzigen)
   - [Bestand toevoegen](#bestand-toevoegen)
@@ -68,6 +69,20 @@ Onze repository heeft een URL waarmee we deze kunnen importeren op onze eigen ma
 
 - Druk op de groene knop met Code rechtsboven op de pagina van de repository
 - Selecteer _HTTPS_ en kopieer de link in het vakje. Deze heeft typisch het formaat `https://github.com/<gebruikersnaam>/<repository-naam>.git`.
+
+## Git configureren
+
+De allereerste keer dat je git gebruikt moet je je naam en e-mailadres instellen.
+
+- Open een terminal
+- Voer onderstaande commando's uit. Vervang Jan Timmersmans door je eigen naam en het e-mailadres door je eigen e-mail.
+
+```shell
+
+git config --global user.name "Jan Timmermans"
+git config --global user.email "your_email@example.com"
+
+```
 
 ## Repository clonen
 
