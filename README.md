@@ -141,7 +141,7 @@ Op dit moment zijn de wijzigingen correct bewaard in je lokale repository. Wanne
 - Gebruik `git push` om de lokale wijzigingen naar de remote repository _pushen_.
 
   ```shell
-  git push origin master
+  git push origin main
   ```
 
 Ververs nu de webpagina van je repository op GitHub. De nieuwe inhoud van je README-bestand zou daar nu ook zichtbaar moeten zijn.
@@ -178,7 +178,7 @@ Nieuwe bestanden toevoegen aan een repository gebeurt op dezelfde wijze als het 
 - Gebruik `git push` om de remote repository te synchroniseren met je lokale repository
 
   ```shell
-  git push origin master
+  git push origin main
   ```
 
 ## Wijzigingen van anderen ophalen
@@ -188,7 +188,7 @@ In een repository met meerdere gebruikers kan je de wijzigingen die anderen _gep
 In deze tutorial werk je alleen, dus zal het onderstaande commando geen effect hebben.
 
 ```shell
-git pull origin master
+git pull origin main
 ```
 
 ## Oude versie van bestand bekijken
@@ -265,22 +265,22 @@ Typisch worden branches aangemaakt voor nieuwe functionaliteiten. Wanneer deze f
 - Switch terug naar de master-branch met `git checkout`
 
   ```shell
-  git checkout master
+  git checkout main
   ```
 
-- Verifieer dat `README.md` op de master branch **niet** is aangepast
+- Verifieer dat `README.md` op de main branch **niet** is aangepast
 
   ```shell
   cat README.md
   ```
 
-- Voeg `readme-wijzigingen` toe aan de master branch met `git merge`
+- Voeg `readme-wijzigingen` toe aan de main branch met `git merge`
 
   ```shell
   git merge readme-wijzigingen
   ```
 
-- Verifieer dat `README.md` op de master branch nu **wel** is aangepast
+- Verifieer dat `README.md` op de main branch nu **wel** is aangepast
 
   ```shell
   cat README.md
@@ -298,7 +298,7 @@ Soms gebeurt het dat meerdere ontwikkelaars op hetzelfde moment in een bestand a
 
 In stap 5 zal Git een melding geven aan ontwikkelaar B dat er een nieuwere commit van een andere ontwikkelaar aanwezig is in de remote repository. Hij kan zijn bestand niet pushen.
 
-6. Ontwikkelaar B voert `git pull origin master` uit
+6. Ontwikkelaar B voert `git pull origin main` uit
 
 Git detecteert nu twee versies van bestand X: X<sub>1</sub> en X<sub>2</sub>. In eerste instantie probeert Git deze bestanden automatisch samen te voegen. Wanneer dit niet, heb je een _merge conflict_.
 
@@ -324,5 +324,5 @@ Wanneer de conflicts opgelost zijn kan developer B zijn wijzigingen committen en
 
 ```shell
 git commit -m "Resolved merge conflict on README"
-git push origin master
+git push origin main
 ```
