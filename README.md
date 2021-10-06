@@ -243,6 +243,11 @@ Typisch worden branches aangemaakt voor nieuwe functionaliteiten. Wanneer deze f
   ```shell
   git branch readme-wijzigen
   ```
+- Switch naar de branch die je net hebt aangemaakt
+  
+  ```shell
+  git checkout readme-wijzigen
+  ```
 
 - Wijzig het bestand `README.md` naar keuze
 
